@@ -1,0 +1,81 @@
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 500px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.modal-form-title {
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+}
+
+.modal-form-btn {
+    width: 200px;
+    height: 50px;
+
+    background: $btn-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.close-modal-btn {
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.close-btn {
+    display: flex;
+    position: absolute;
+    transform: translate(8px, -8px);
+    top: 16px;
+    right: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: transparent;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}

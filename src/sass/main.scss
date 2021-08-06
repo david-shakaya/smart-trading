@@ -1,0 +1,19 @@
+// Базовые файлы
+@import 'normalize.scss';
+@import './utils/var.scss';
+@import 'base.scss';
+
+// компоненты
+@import './components/container.scss';
+@import './components/slider.scss';
+@import './components/form.scss';
+@import './components/select.scss';
+@import './components/modal.scss';
+
+// страницы
+@import './layout/header.scss';
+@import './layout/hero.scss';
+@import './layout/about-product.scss';
+@import './layout/where-get';
+@import './layout/call-action.scss';
+@import './layout/footer.scss';

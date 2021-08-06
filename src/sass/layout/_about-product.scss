@@ -1,0 +1,124 @@
+.about-product {
+    &__card {
+        padding-top: 33px;
+        text-align: left;
+    }
+    &__description {
+        display: flex;
+        padding-top: 55px;
+        margin-bottom: 10px;
+    }
+    //   &__icon {
+    //   }
+    // &__img {
+
+    // }
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 22px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 17px;
+
+        background-color: white;
+        box-shadow: 0px 0px 6px rgba(8, 35, 48, 0.15);
+        border: 1px $btn-color solid;
+        border-radius: 10px;
+        & img {
+            margin-bottom: 10px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 134px;
+    }
+    &__text {
+        margin-bottom: 40px;
+        width: 550px;
+    }
+
+    &__text-ic {
+        font-family: $main-font;
+        color: $title-text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+
+        width: 222px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__wrapper {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin-top: 228px;
+        z-index: 3;
+        background: rgb(255, 255, 255);
+
+        &::after {
+            background-blend-mode: multiply;
+            height: 1903px;
+
+            width: 100vw;
+
+            content: '';
+            display: block;
+            position: absolute;
+
+            top: -234px;
+
+            z-index: -1;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-image: url(../images/about-product/com.png);
+            opacity: 0.2;
+
+            background-color: rgba(196, 196, 196, 1);
+        }
+    }
+}
+.about-product-app {
+    &__btn {
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: transparent;
+        border: 2px $btn-color solid;
+        border-radius: 5px;
+
+        &.first {
+            padding-left: 16px;
+            padding-right: 18px;
+            padding-top: 10px;
+            padding-bottom: 11px;
+        }
+        &.second {
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 25.5px;
+        }
+    }
+    &__list {
+        display: flex;
+    }
+}
