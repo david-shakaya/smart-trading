@@ -2,13 +2,16 @@
 @import 'normalize.scss';
 @import './utils/var.scss';
 @import 'base.scss';
+@import './utils/typography.scss';
 
 // компоненты
 @import './components/container.scss';
-@import './components/slider.scss';
-@import './components/form.scss';
-@import './components/select.scss';
+// @import './components/slider.scss';
+// @import './components/form.scss';
+// @import './components/select.scss';
 @import './components/modal.scss';
+@import './components/logo.scss';
+@import './components/header-mobile.scss';
 
 // страницы
-@import './layout/header.scss';
+@import './home-sections/header.scss';

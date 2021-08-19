@@ -1,11 +1,18 @@
 $btn-color: rgba(235, 87, 87, 1);
 
 // шрифты
-$main-font: 'Open Sans', sans-serif;
-$logo-font: 'Montserrat', sans-serif;
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
 
 // Цвета
-$title-light: rgba(255, 255, 255, 1);
+$white: rgba(255, 255, 255, 1);
+$black: rgb(0, 0, 0);
 $body-light: rgba(240, 240, 240, 1);
 $title-text: rgba(29, 29, 29, 1);
 $body: rgba(60, 60, 60, 1);
+
+//Брекпоинты
+
+$mobile: 320px;
+$pad: 768px;
+$laptop: 1160px;

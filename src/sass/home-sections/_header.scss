@@ -1,6 +1,8 @@
 .header {
-  //   &__flex-wrapper {
-  //   }
+  &__flex-wrapper {
+    // @media screen and(min-width: $mobile)
+    display: none;
+  }
   //   &__logo {
   //   }
 }
