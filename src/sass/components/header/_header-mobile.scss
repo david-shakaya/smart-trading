@@ -1,6 +1,26 @@
 .header-mobile {
-  position: relative;
-  box-shadow: 0px 4px 8px rgba(8, 35, 48, 0.24);
+  display: block;
+  @media screen and(min-width: $laptop) {
+    display: none;
+  }
+
+  &__btn-list {
+    @media screen and (min-width: $pad) {
+      display: none;
+    }
+  }
+  &__btn-list-tab {
+    display: none;
+
+    @media screen and (min-width: $pad) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $laptop) {
+      display: none;
+    }
+  }
+
   &__flex-wrapper {
     display: flex;
     justify-content: space-between;

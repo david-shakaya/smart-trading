@@ -1,0 +1,10 @@
+.header-descktop {
+  display: none;
+
+  @media screen and (min-width: $laptop) {
+    display: block;
+  }
+}
+.header-descktop {
+  display: flex;
+}

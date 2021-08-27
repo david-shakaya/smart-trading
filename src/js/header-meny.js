@@ -1,5 +1,5 @@
 const refs = {
-  menuList: document.querySelector('.menu-mobile__list'),
+  menuList: document.querySelector('.header-mobile__nav-list'),
 };
 
 function toggleHeaderMenu() {
@@ -8,8 +8,9 @@ function toggleHeaderMenu() {
     const menuLink = e.target.classList[0];
     const submenuList = e.target.nextElementSibling;
 
-    if (menuLink === 'menu-mobile__link') {
+    if (menuLink === 'header-mobile__link') {
       submenuList.classList.toggle('submenu-mobile__list--active');
     }
   }
 }
+toggleHeaderMenu();

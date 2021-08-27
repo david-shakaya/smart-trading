@@ -1,0 +1,14 @@
+.nav-descktop {
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item:hover > &__submenu-list {
+    visibility: visible;
+    position: static;
+  }
+  &__submenu-list {
+    position: absolute;
+    visibility: hidden;
+  }
+}

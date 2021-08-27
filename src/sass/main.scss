@@ -9,9 +9,12 @@
 // @import './components/slider.scss';
 // @import './components/form.scss';
 // @import './components/select.scss';
+@import './components/button.scss';
 @import './components/modal.scss';
 @import './components/logo.scss';
-@import './components/header-mobile.scss';
+@import './components/header/header';
+@import './components/header/header-mobile.scss';
+@import './components/header/header-desktop.scss';
+@import './components/header/nav-descktop.scss';
 
 // страницы
-@import './home-sections/header.scss';
