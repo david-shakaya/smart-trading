@@ -2,9 +2,13 @@
   display: none;
 
   @media screen and (min-width: $laptop) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
-.header-descktop {
-  display: flex;
+
+  &__btn-list {
+    display: flex;
+    align-items: center;
+  }
 }

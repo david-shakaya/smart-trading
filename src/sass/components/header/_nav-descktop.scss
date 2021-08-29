@@ -1,14 +1,30 @@
 .nav-descktop {
+  margin-right: 160px;
   &__menu-list {
     display: flex;
   }
 
+  &__menu-item {
+    margin-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    cursor: pointer;
+  }
+
   &__menu-item:hover > &__submenu-list {
     visibility: visible;
-    position: static;
+    background-color: #ffffff;
+    padding: 15px;
+    width: max-content;
+    box-shadow: 0px 4px 8px rgba(8, 35, 48, 0.24);
   }
+
   &__submenu-list {
     position: absolute;
     visibility: hidden;
+  }
+
+  &__submenu-item {
+    margin-bottom: 8px;
   }
 }
