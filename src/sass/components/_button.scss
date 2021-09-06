@@ -35,7 +35,7 @@
     text-decoration: none;
   }
 
-  &_transparent {
+  &--transparent {
     background: none;
     color: #000000;
     border: 1px solid #24c9d3;
@@ -50,11 +50,11 @@
     }
   }
 
-  &_small {
+  &--small {
     padding: 7px 30px;
   }
 
-  &_large {
+  &--large {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 67px;
@@ -67,7 +67,7 @@
     }
   }
 
-  &_icon {
+  &--icon {
     width: 40px;
     height: 40px;
     display: flex;
