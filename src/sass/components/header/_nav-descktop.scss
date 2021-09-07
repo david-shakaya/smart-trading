@@ -19,21 +19,39 @@
       width: 14px;
       height: 8px;
       background-image: url(../../../images/icon-arrow.svg);
+      transition: 150ms;
+    }
+
+    &:hover {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 38px;
+        right: -17px;
+        display: block;
+        width: 14px;
+        height: 8px;
+        background-image: url(../../../images/icon-arrow.svg);
+        transform: rotate(180deg);
+        transition: 200ms;
+      }
     }
   }
 
   &__menu-item:hover > &__submenu-list {
     visibility: visible;
-    background-color: #ffffff;
-    padding: 15px;
-    width: max-content;
-    box-shadow: 0px 4px 8px rgba(8, 35, 48, 0.24);
+    transition: 200ms;
   }
 
   &__submenu-list {
+    min-width: 200px;
     position: absolute;
     visibility: hidden;
     top: 84px;
+    background-color: #2d313e;
+    box-shadow: 0px 4px 8px rgba(8, 35, 48, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
   }
 
   &__submenu-item {
@@ -41,8 +59,9 @@
   }
   &__submenu-link {
     display: block;
+    color: #ffffff;
     &:hover {
-      color: brown;
+      color: #0da8b1;
     }
   }
 }
