@@ -10,5 +10,30 @@
   &__btn-list {
     display: flex;
     align-items: center;
+    margin-right: 20px;
+  }
+
+  &__btn-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__btn-lang {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background: none;
+    position: relative;
+    border: 1px rgb(119, 119, 119) solid;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      right: -20px;
+      display: block;
+      width: 14px;
+      height: 8px;
+      background-image: url(../../../images/icon-arrow.svg);
+    }
   }
 }

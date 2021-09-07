@@ -1,14 +1,25 @@
 .nav-descktop {
-  margin-right: 160px;
   &__menu-list {
     display: flex;
   }
 
   &__menu-item {
-    margin-right: 30px;
+    position: relative;
+    margin-right: 47px;
     padding-top: 32px;
     padding-bottom: 32px;
     cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 38px;
+      right: -17px;
+      display: block;
+      width: 14px;
+      height: 8px;
+      background-image: url(../../../images/icon-arrow.svg);
+    }
   }
 
   &__menu-item:hover > &__submenu-list {
@@ -22,9 +33,16 @@
   &__submenu-list {
     position: absolute;
     visibility: hidden;
+    top: 84px;
   }
 
   &__submenu-item {
     margin-bottom: 8px;
+  }
+  &__submenu-link {
+    display: block;
+    &:hover {
+      color: brown;
+    }
   }
 }

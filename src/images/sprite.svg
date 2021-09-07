@@ -17,6 +17,9 @@
 <path fill="#324095" style="fill: var(--color4, #324095)" d="M54.857 10.674h-54.857v10.674h54.857v-10.674z"></path>
 <path fill="#d81f26" style="fill: var(--color5, #d81f26)" d="M54.857 21.326h-54.857v10.674h54.857v-10.674z"></path>
 </symbol>
+<symbol id="icon-arrow" viewBox="0 0 56 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="8" d="M4 4l24 24 24-24"></path>
+</symbol>
 </svg>
 
 
