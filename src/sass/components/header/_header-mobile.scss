@@ -100,6 +100,24 @@
     max-width: 320px;
     margin: 0 auto;
   }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: $pad) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button-lang {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    border: 1px #777777 solid;
+  }
 }
 
 // @media screen and(min-width: $laptop) {
