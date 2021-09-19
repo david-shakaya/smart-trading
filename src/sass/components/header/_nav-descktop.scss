@@ -43,6 +43,12 @@
     transition: 200ms;
   }
 
+  &__menu-item:hover > &__menu-link {
+   color: #0da8b1;
+   transition: 200ms;
+  }
+
+
   &__submenu-list {
     min-width: 200px;
     position: absolute;
