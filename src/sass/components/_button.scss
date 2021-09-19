@@ -25,11 +25,6 @@
     border: 1px solid #0da8b1;
     color: #ffffff;
     text-decoration: none;
-    transform: scale(none);
-
-    @media screen and (min-width: $pad) {
-      transform: scale(1.1);
-    }
   }
 
   &:hover div {
@@ -57,12 +52,24 @@
       color: #ffffff;
       background: #0da8b1;
       border: 1px solid #0da8b1;
+      transform: scale(none);
+
+      @media screen and (min-width: $pad) {
+        transform: scale(1.1);
+      }
     }
   }
 
   &--small {
     padding: 8px 35px;
     
+    &:hover {
+      transform: scale(none);
+
+      @media screen and (min-width: $pad) {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &--large {
