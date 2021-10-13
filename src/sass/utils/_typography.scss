@@ -3,8 +3,13 @@
     font-family: $font-family-primary;
     font-style: normal;
     font-weight: bold;
-    font-size: 44px;
-    line-height: 140%;
+    font-size: 32px;
+    line-height: 132%;
+
+    @media screen and (min-width: $pad) {
+      font-size: 44px;
+      line-height: 140%;
+    }
   }
 
   &--h2 {
@@ -24,7 +29,7 @@
   }
 
   &--button-text {
-    font-family:  $font-family-primary;
+    font-family: $font-family-primary;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

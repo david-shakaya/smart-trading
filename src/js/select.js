@@ -25,7 +25,6 @@ let select = function () {
     selectCurrent.classList.add('is-active');
     select.classList.remove('is-active');
   }
-}
+};
 
 select();
-
